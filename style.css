@@ -1,0 +1,144 @@
+/*************** reset *****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+
+
+/*************** general*****************/
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(./Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+    font-size: 500;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-size: 700;
+}
+@font-face {
+    font-family: 'fraunces';
+    src: url(./Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    font-size: 700;
+}
+.root {
+    /********** neutral ***********/
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /****** primary *******/
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+}
+body {
+    background-color: rgb(225 235 247);
+    text-align: left;
+    font-size: 14px;
+
+}
+h1 {
+    color: black;
+    font-size: 2.6em;
+    margin-bottom: 0.5em;
+    margin-left: 0.7em;
+    font-family: 'Fraunces', serif;
+
+}
+p {
+    color: rgba(128, 128, 128, 0.897);
+    font-size: 15px;
+    margin: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+p b {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.9em;
+    margin-top: 1.5em;
+    font-family: 'Fraunces';
+
+}
+/*************** mine *****************/
+main {
+ height: 110vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: left;
+ margin-left: 19em;
+ margin-top: 2em;
+}
+
+.box {
+    background-color: #fff;
+    width: 85%;
+    margin-top: 8em;
+    margin-left: -4em;
+    margin-right: -4em;
+    margin-bottom: -22em;
+    padding: 0%;
+    border-radius: 0.800em;
+}
+.box img {
+    width: 100%;
+    border-top-right-radius: 0.750em;
+    border-top-left-radius: 0.750em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em 
+
+}
+
+button img {
+    max-width: fit-content;
+}
+button {
+
+    background-color: hsl(158, 36%, 37%);
+    width: 85%;
+    padding: 2%;
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+    border-radius: 0.800em;
+    font-style: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+button p {
+    color: #fff;
+    text-align: center;
+    display: inline;
+    margin-left: 0.5em;
+    font-size: 18px;
+}
+
+
+
+/**************** media query ****************/
+
+@media screen and (min-width: 375px) {
+    .box{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .box{
+        width: 50%;
+    }
+}
